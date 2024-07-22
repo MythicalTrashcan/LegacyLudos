@@ -33,6 +33,9 @@
     <div>
         <button class="main" onmouseover="randomTilt()" onclick="viewProjects()">View Projects</button>
     </div>
+    <div>
+        <button class="modern" onclick="openModernDesign()">Modern Design</button>
+    </div>
     <div class="navLinks">
         <h2>
             <a class="mirror" onclick="selectMirror()">Mirror Sites</a>
@@ -58,6 +61,10 @@
     function openRevite() {
         const Revite = document.querySelector('revite');
         window.open(localStorage.getItem("reviteLink"));
+    }
+
+    function openModernDesign() {
+        window.location.href = 'https://www.theludos.com';
     }
 
     if (localStorage.getItem("assetsLink") === null) {
