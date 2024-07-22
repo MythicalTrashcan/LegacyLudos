@@ -6,30 +6,25 @@
     background-image: linear-gradient(to top, #1f1f1f, #3b3b3c, #595a5c, #787b7d, #989ea0);
 }
 
-div {
+h1, h2, div {
     text-align: center;
+    font-size: 80px;
+}
+
+#embed {
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 .ludosLogo {
-    margin-top: -50px;
     margin-bottom: -100px;
-}
-
-.infoMain {
-    font-size: 40px;
-    margin-top: 100px;
+    height: auto;
 }
 
 .navLinks {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.notice {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 30px;
 }
 
 .footer {
@@ -45,41 +40,25 @@ div {
     font-size: 25px;
 }
 
-h1 {
-    text-align: center;
-    font-size: 80px;
-}
-
-h2 {
-    text-align: center;
-    font-size: 50px;
-}
-
-h3 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-button {
+.main {
+    width: 32vw;
+    height: auto;
+    max-width: 800px;
+    min-width: 300px;
     background-color: #4CAF50;
     border-style: solid;
     border-color: #1c551e;
     border-radius: 50px;
-    text-align: center;
     color: #ffffff;
-    padding: 30px 64px;
-    text-decoration: none;
-    display: inline-block;
+    text-shadow: none;
     font-size: 75px;
+    padding: 30px 64px;
     cursor: pointer;
     box-shadow: 10px 5px 4px 2px #1c541e;
     transition: width .25s, height .25s, background-color .25s, transform .25s;
 }
 
-button[disabled] {
+.main[disabled] {
     background: #808080;
     border-color: #505050;
     box-shadow: 12px 8px 4px 4px #444444;
@@ -87,167 +66,79 @@ button[disabled] {
     cursor: default;
 }
 
-button:hover[disabled] {
+.main:hover[disabled] {
     background-color: grey;
 }
 
-button:active[disabled] {
+.main:active[disabled] {
     transform: scale(1.00);
 }
 
-button:active {
+.main:active {
     transform: scale(0.95);
 }
 
-button:hover {
+.main:hover {
     background-color: #28722b;
     transform: scaleX(.95) scaleY(.95) rotate(-5deg);
 }
 
-.revolt {
-    width: 1000px;
-    display: block;
-    position: relative;
-    top: -35px;
-    margin-bottom: 35px;
+.mirror, .revolt, .github, .youtube, .about {
+    width: 25vw;
+    min-width: 250px;
+    max-width: 700px;
+    display: inline-block;
     padding: 16px;
-    background-color: #222324;
     border-style: solid;
-    border-color: #0c0c0c;
-    box-shadow: inset;
-    box-shadow: 6px 4px 4px 2px #000000;
-    cursor: pointer;
-    transition: all;
-    padding: 15px 60px;
-    text-shadow: none;
-    color: #ff002b;
-    text-decoration: none;
-    font-size: x-large;
     border-radius: 15px;
-    transition: width .25s, height .25s, background-color .25s, transform .25s;
-}
-
-.movies {
-    width: 1000px;
-    display: block;
-    position: relative;
-    top: -35px;
-    margin-bottom: 35px;
-    padding: 16px;
-    background-color: #222324;
-    border-style: solid;
-    border-color: #0c0c0c;
-    box-shadow: inset;
-    box-shadow: 6px 4px 4px 2px #000000;
     cursor: pointer;
-    transition: all;
-    padding: 15px 60px;
     text-shadow: none;
-    color: #6300e6;
-    text-decoration: none;
-    font-size: x-large;
-    border-radius: 15px;
-    transition: width .25s, height .25s, background-color .25s, transform .25s;
-}
-
-.github {
-    width: 1000px;
-    display: block;
-    position: relative;
-    top: -35px;
-    margin-bottom: 35px;
-    padding: 16px;
-    background-color: #222324;
-    border-style: solid;
-    border-color: #0c0c0c;
+    font-size: 25px;
     box-shadow: inset;
-    box-shadow: 6px 4px 4px 2px #000000;
-    cursor: pointer;
-    transition: all;
-    padding: 15px 60px;
-    text-shadow: none;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: x-large;
-    border-radius: 15px;
-    transition: width .25s, height .25s, background-color .25s, transform .25s;
-}
-
-.youtube {
-    width: 1000px;
-    display: block;
-    position: relative;
-    top: -35px;
-    margin-bottom: 35px;
-    padding: 16px;
-    background-color: #ff0000;
-    border-style: solid;
-    border-color: #940000;
-    box-shadow: inset;
-    box-shadow: 6px 4px 4px 2px #660101;
-    cursor: pointer;
-    transition: all;
-    padding: 15px 60px;
-    text-shadow: none;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: x-large;
-    border-radius: 15px;
-    transition: width .25s, height .25s, background-color .25s, transform .25s;
-}
-
-.about {
-    width: 1000px;
-    display: block;
-    position: relative;
-    top: -35px;
-    margin-bottom: 35px;
-    padding: 16px;
-    background-color: #ff9900;
-    border-style: solid;
-    border-color: #944f00;
-    box-shadow: inset;
-    box-shadow: 6px 4px 4px 2px #662901;
-    cursor: pointer;
-    transition: all;
-    padding: 15px 60px;
-    text-shadow: none;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: x-large;
-    border-radius: 15px;
     transition: width .25s, height .25s, background-color .25s, transform .25s;
 }
 
 .mirror {
-    width: 1000px;
-    display: block;
-    position: relative;
-    top: -35px;
-    margin-bottom: 35px;
-    padding: 16px;
-    background-color: #ceba47;
-    border-style: solid;
-    border-color: #948500;
-    box-shadow: inset;
-    box-shadow: 6px 4px 4px 2px #646601;
-    cursor: pointer;
-    transition: all;
-    padding: 15px 60px;
-    text-shadow: none;
     color: #ffffff;
-    text-decoration: none;
-    font-size: x-large;
-    border-radius: 15px;
-    transition: width .25s, height .25s, background-color .25s, transform .25s;
+    background-color: #ceba47;
+    border-color: #948500;
+    box-shadow: 6px 4px 4px 2px #646601;
 }
 
-.revolt:hover {
-    background-color: #131313;
+.revolt {
+    color: #ff002b;
+    background-color: #222324;
+    border-color: #0c0c0c;
+    box-shadow: 6px 4px 4px 2px #000000;
+}
+
+.github {
+    color: #ffffff;
+    background-color: #222324;
+    border-color: #0c0c0c;
+    box-shadow: 6px 4px 4px 2px #000000;
+}
+
+.youtube {
+    color: #ffffff;
+    background-color: #ff0000;
+    border-color: #940000;
+    box-shadow: 6px 4px 4px 2px #660101;
+}
+
+.about {
+    color: #ffffff;
+    background-color: #ff9900;
+    border-color: #944f00;
+    box-shadow: 6px 4px 4px 2px #662901;
+}
+
+.mirror:hover {
+    background-color: #ceba47;
     transform: scale(0.95);
 }
 
-.movies:hover {
+.revolt:hover {
     background-color: #131313;
     transform: scale(0.95);
 }
@@ -264,10 +155,5 @@ button:hover {
 
 .about:hover {
     background-color: #c07300;
-    transform: scale(0.95);
-}
-
-.mirror:hover {
-    background-color: #ceba47;
     transform: scale(0.95);
 }
