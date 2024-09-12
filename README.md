@@ -1,4 +1,4 @@
-# Ludos
+# Ludos Legacy
 Play HTML games in your browser easily!
 
 ## Cloning the repository and hosting
@@ -18,12 +18,12 @@ If you are stuck, do not make an issue. Please just Google it or something.
 ### Clone to repo locally by running this command in a terminal or command prompt
 
 ```bash
-git clone https://github.com/MythicalTrashcan/Ludos.git
+git clone https://github.com/MythicalTrashcan/LegacyLudos.git
 ```
 Or if you have GitHub CLI
 
 ```bash
-gh repo clone MythicalTrashcan/Ludos
+gh repo clone MythicalTrashcan/LegacyLudos
 ```
 ### Running the website
 
