@@ -30,7 +30,7 @@ function openAbout() {
 }
 
 function selectMirror() {
-    window.location.href = './mirrorLinks.html';
+    window.location.href = './mirror-links/';
 }
 
 window.addEventListener("load", () => {
