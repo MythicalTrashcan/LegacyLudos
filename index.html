@@ -64,7 +64,7 @@
     }
 
     function openModernDesign() {
-        window.location.href = 'https://www.theludos.com';
+        window.location.href = location.protocol + '//' + location.hostname.split('.').slice(-2).join('.');
     }
 
     if (localStorage.getItem("assetsLink") === null) {
